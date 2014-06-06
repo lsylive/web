@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="report" extends="struts-default" namespace="/report">
+		<global-results>
+			<result name="ERROR">/common/error.jsp</result>
+         <result name="MESSAGE">/common/message.jsp</result>
+			<result name="notLogin">/common/relogin.jsp</result>
+         <result name="noPrivilege">/common/noPrivilege.jsp</result>
+      </global-results>	
+		
+		<action name="prjProgress" class="com.liusy.pm.report.web.ProjectProgressAction">
+			<result name="LIST">/jsp/report/prjProgress/report_list.jsp</result>
+			<result name="rep1">/jsp/report/prjProgress/prj_progress_report2.jsp</result>
+			<result name="rep2">/jsp/report/prjProgress/prj_progress_report2.jsp</result>
+			<result name="rep3">/jsp/report/prjProgress/prj_progress_report3.jsp</result>
+			<result name="rep4">/jsp/report/prjProgress/prj_progress_report4.jsp</result>
+			<result name="rep5">/jsp/report/prjProgress/prj_progress_report5.jsp</result>
+			<result name="rep6">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="rep7">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="rep8">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="rep9">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="rep10">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+		</action>	
+		<action name="prjFee" class="com.liusy.pm.report.web.ProjectFeeAction">
+			<result name="LIST">/jsp/report/prjFee/report_list.jsp</result>
+			<result name="fee1">/jsp/report/prjFee/prj_fee_report1.jsp</result>
+			<result name="fee2">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="fee3">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="fee4">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="fee5">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="fee6">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="fee7">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="fee8">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="fee9">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+			<result name="fee10">/jsp/report/prjFee/prj_fee_report2.jsp</result>
+		</action>		
+	</package>
+</struts>

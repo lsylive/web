@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="project" extends="struts-default" namespace="/project">
+		<global-results>
+			<result name="ERROR">/common/error.jsp</result>
+         <result name="MESSAGE">/common/message.jsp</result>
+			<result name="notLogin">/common/relogin.jsp</result>
+         <result name="noPrivilege">/common/noPrivilege.jsp</result>
+      </global-results>	
+		
+		<action name="prjStart" class="com.liusy.pm.project.web.ProjectStartAction">
+			<result name="LIST">/jsp/project/prjStart/pm_start_list.jsp</result>
+			<result name="ADD">/jsp/project/prjStart/pm_sub_prj_add.jsp</result>
+			<result name="EDIT">/jsp/project/prjStart/pm_sub_prj_edit.jsp</result>
+			<result name="VIEW">/jsp/project/prjStart/pm_sub_prj_view.jsp</result>
+			<result name="PRJLIST">/jsp/project/prjStart/pm_prj_list.jsp</result>
+		</action>
+		
+		<action name="prjStartVerify" class="com.liusy.pm.project.web.ProjectStartVerifyAction">
+			<result name="LIST">/jsp/project/prjStart/pm_start_verify_list.jsp</result>
+			<result name="VERIFY">/jsp/project/prjStart/pm_start_verify.jsp</result>
+			<result name="VIEW">/jsp/project/prjStart/pm_start_verify_view.jsp</result>
+		</action>
+		
+		<action name="prjProject" class="com.liusy.pm.project.web.ProjectAction">
+			<result name="LIST">/jsp/project/project_list.jsp</result>
+			<result name="ADD">/jsp/project/project_add.jsp</result>
+			<result name="EDIT">/jsp/project/project_edit.jsp</result>
+			<result name="VIEW">/jsp/project/project_view.jsp</result>
+		</action>
+
+        <action name="prjBrowser" class="com.liusy.pm.project.web.ProjectBrowserAction">
+			<result name="LIST">/jsp/project/prjBrowser/pm_prj_browser.jsp</result>
+			<result name="VIEW">/jsp/project/prjBrowser/pm_prj_browser_view.jsp</result>
+		</action>
+
+		<action name="contractSign" class="com.liusy.pm.project.web.ContractSignAction">
+			<result name="CONTRACTLIST">/jsp/project/contractSign/pm_contract_sign_list.jsp</result>
+			<result name="ADD">/jsp/project/contractSign/pm_contract_sign_add.jsp</result>
+			<result name="LIST">/jsp/project/contractSign/pm_contract_sign_edit.jsp</result>
+			<result name="VIEW">/jsp/project/contractSign/pm_contract_sign_view.jsp</result>
+			<result name="PRJLIST">/jsp/project/contractSign/pm_prj_list.jsp</result>
+			<result name="ADDSTAGE">/jsp/project/contractSign/pm_contract_sign_stage_add.jsp</result>
+			<result name="EDITSTAGE">/jsp/project/contractSign/pm_contract_sign_stage_edit.jsp</result>
+			<result name="VIEWSTAGE">/jsp/project/contractSign/pm_contract_sign_stage_view.jsp</result>
+			<result name="QUERY">/jsp/project/contractPay/contract_info.jsp</result>
+		</action>
+		
+		<action name="prjPayApply" class="com.liusy.pm.project.web.PayApplyAction">
+			<result name="LIST">/jsp/project/contractPay/pay_apply_list.jsp</result>
+			<result name="ADD">/jsp/project/contractPay/pay_apply_add.jsp</result>
+			<result name="EDIT">/jsp/project/contractPay/pay_apply_edit.jsp</result>
+			<result name="VIEW">/jsp/project/contractPay/pay_apply_view.jsp</result>
+			<result name="CHOICECONTRACT">/jsp/project/contractPay/apply_contranct_list.jsp</result>
+		</action>
+		
+		<action name="contractPayReg" class="com.liusy.pm.project.web.ContractPayAction">
+			<result name="listPayReg">/jsp/project/contractPay/contract_payReg_list.jsp</result>
+			<result name="goPayReg">/jsp/project/contractPay/contract_payReg.jsp</result>
+			<result name="goPayRegMain">/jsp/project/contractPay/contract_payReg_main.jsp</result>
+			<result name="viewPayReg">/jsp/project/contractPay/contract_payReg_view.jsp</result>
+		</action>
+		
+		<action name="prjPayAudit" class="com.liusy.pm.project.web.PayAuditAction">
+			<result name="LIST">/jsp/project/contractPay/pay_audit_list.jsp</result>
+			<result name="EDIT">/jsp/project/contractPay/pay_audit_edit.jsp</result>
+			<result name="VIEW">/jsp/project/contractPay/pay_audit_view.jsp</result>
+		</action>
+		
+		<action name="pmDoc" class="com.liusy.pm.project.web.PmDocAction">
+			<result name="listDocFile">/jsp/project/docFile/docFile_list.jsp</result>
+			<result name="mainDocFile">/jsp/project/docFile/docFile_main.jsp</result>
+			<result name="addDocFile">/jsp/project/docFile/docFile_add.jsp</result>
+			<result name="editDocFile">/jsp/project/docFile/docFile_edit.jsp</result>
+			<result name="viewDocFile">/jsp/project/docFile/docFile_view.jsp</result>
+			<result name="retrieveDocFile">/jsp/project/docFile/docFile_retrieve.jsp</result>
+			<result name="tipDocFile">/jsp/project/docFile/docFile_tip.jsp</result>
+			<result name="filingDocFile">/jsp/project/docFile/docFile_filing.jsp</result>
+			<result name="checkDocFile">/jsp/project/docFile/docFile_checkResult.jsp</result>
+		</action>
+		
+		<action name="pmFinc" class="com.liusy.pm.project.web.PmFincPaperAction">
+			<result name="listFinc">/jsp/project/fincPaper/fincPaper_list.jsp</result>
+			<result name="addFinc">/jsp/project/fincPaper/fincPaper_add.jsp</result>
+			<result name="editFinc">/jsp/project/fincPaper/fincPaper_edit.jsp</result>
+			<result name="viewFinc">/jsp/project/fincPaper/fincPaper_view.jsp</result>
+		</action>
+		
+		<action name="prjDoc" class="com.liusy.pm.project.web.ProjectDocAction">
+			<result name="LIST">/jsp/project/prjDoc/subPrj_list.jsp</result>
+			<result name="VIEW">/jsp/project/prjDoc/subPrj_view.jsp</result>
+		</action>
+   
+	</package>
+</struts>
