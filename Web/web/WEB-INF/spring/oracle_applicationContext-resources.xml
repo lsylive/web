@@ -6,10 +6,10 @@
 
 	<!-- JDBC DataSource -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/cms?useUnicode=true&amp;characterEncoding=utf8"/>
-		<property name="username" value="root" />
-		<property name="password" value="root" />
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:orcl"/>
+		<property name="username" value="web" />
+		<property name="password" value="web" />
 		<property name="maxActive" value="20" />
 		<property name="maxIdle" value="5" />
 		<property name="maxWait" value="1000" />
@@ -37,12 +37,10 @@
 				<value>classpath:/com/liusy/common/model/**/*.hbm.xml</value>
 			</list>
 		</property>
-	
 		<property name="hibernateProperties">
 			<props>
-				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle9iDialect</prop>
 				<prop key="show_sql">true</prop>
-				<!-- <prop key="hibernate.hbm2ddl.auto">create</prop> -->
 				<prop key="hibernate.order_updates">true</prop>
 				<prop key="hibernate.generate_statistics">true</prop>
 				<prop key="hibernate.bytecode.use_reflection_optimizer">true</prop>
@@ -80,10 +78,9 @@
 	
 	<!-- Mysql -->
 	<bean id="sqlGenerator" class="com.liusy.core.dao.impl.MysqlSqlGenerator" autowire="byName"></bean>
-
+	
 	<bean id="commonService" class="com.liusy.common.service.impl.CommonServiceImpl" autowire="byName"></bean>
 
 	<bean id="SpringContextUtil" class="com.liusy.core.web.SpringContextUtil" scope="singleton"></bean>
-
 
 </beans>

@@ -228,7 +228,7 @@ html,body {
 
    <div id="topBanner" style="display: none;">
       <div style="height:8px;"></div>
-      <div id="sysName">政法网工程项目档案管理系统</div>
+      <div id="sysName">CMS管理系统</div>
       <div id="header">
          <div id="logSate" style="font-size: 12px;">
             <%

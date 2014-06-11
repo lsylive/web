@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src/web"/>
+	<classpathentry kind="src" path="web/WEB-INF/properties"/>
 	<classpathentry kind="src" path="src_core"/>
 	<classpathentry kind="src" path="src/dao"/>
 	<classpathentry kind="src" path="src/service"/>
@@ -31,7 +32,6 @@
 	<classpathentry kind="lib" path="web/WEB-INF/lib/jta-1.1.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/jxl.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/livetribe-jsr223.jar"/>
-	<classpathentry kind="lib" path="web/WEB-INF/lib/log4j-1.2.11.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/mail.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/ognl-3.0.1.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/ojdbc14.jar"/>
@@ -47,5 +47,8 @@
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/mysql-connector-java-5.1.17.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/slf4j-log4j12-1.7.3.jar"/>
 	<classpathentry kind="output" path="web/WEB-INF/classes"/>
 </classpath>

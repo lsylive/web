@@ -219,7 +219,7 @@ function goValidate(){
 }
 
 function login(){
-	var n=document.getElementById('userName'); n.value='test';
+	var n=document.getElementById('userName'); n.value='admin';
 	var p=document.getElementById('password'); p.value='12345678';
    document.forms[0].submit();
 }
@@ -230,15 +230,37 @@ function showmsg(){
 		alert(msg);
 }
 
+document.onkeydown=function(e){
+        var isie = (document.all) ? true:false;
+        var key;
+        var ev;
+        if(isie){//IE浏览器
+        key = window.event.keyCode;
+        ev = window.event;
+        }else{//火狐浏览器
+        key = e.which;
+        ev = e;
+        }
+        if(key==13){//IE浏览器
+        if(isie){
+           login();
+        }else{//火狐浏览器
+            login();
+        }
+        }
+        };
+        
+        
+
 </script>  
 </head>
-<body onload="login()">
+<body>
 <!--<body>-->
 	<div id="loginWrap">
 	
 	<h1 class="top-1"></h1>
          <div class="top-2"></div>
-      <div class="top-3">政法网工程档案管理系统</div>
+      <div class="top-3">cms</div>
     <div id="login">
         <form id="loginForm" action="<%=CONTEXT_PATH%>login.do?action=login" method="post">
            	<div class="wrap">

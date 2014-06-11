@@ -28,7 +28,6 @@
 	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/jta-1.1.jar"/>
 	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/jxl.jar"/>
 	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/livetribe-jsr223.jar"/>
-	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/log4j-1.2.11.jar"/>
 	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/mail.jar"/>
 	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/ognl-3.0.1.jar"/>
 	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/ojdbc14.jar"/>
@@ -39,5 +38,8 @@
 	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/struts2-core-2.2.3.jar"/>
 	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/struts2-spring-plugin-2.2.3.jar"/>
 	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/xwork-core-2.2.3.jar"/>
+	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/mysql-connector-java-5.1.17.jar"/>
+	<classpathentry kind="lib" path="/Web/web/WEB-INF/lib/slf4j-log4j12-1.7.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
